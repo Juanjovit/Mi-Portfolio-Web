@@ -1,0 +1,1113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*
+    border: 1px solid red;
+*/
+}
+
+html {
+    scroll-behavior:smooth;
+  }
+
+body{
+    font-family: 'Work Sans', sans-serif;
+
+}
+p{
+    color: gray;
+}
+
+
+
+
+/*PantallaInicio*/
+
+h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3em;
+}
+
+h2 span{
+    color: #6bacb0;
+}
+
+h3{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2em;
+}
+
+
+#pantallaInicio{
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    margin: 0px 10px 35px 10px;
+}
+
+#pantallaInicio img{
+    width: 70vw;
+    border-radius: 50%;
+}
+
+#pantallaInicio div:nth-child(1){
+    margin:auto auto auto auto;
+    
+
+}
+
+#pantallaInicio div:nth-child(1) p{    
+    display: none;
+    color: gray;
+    margin-bottom: 5%;
+}
+
+#pantallaInicio div:nth-child(2){
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.boton1 {
+    display: none;
+}
+
+
+
+
+
+
+/*SOBRE MI*/
+
+#sobreMi{
+    margin: 0px 10px 50px 10px;
+    
+}
+
+#sobreMi h2{
+    color: #6bacb0;
+}
+
+#sobreMi img{
+    display: none;
+}
+
+#sobreMi div:last-child div:last-child ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+    margin: 0px 10px 0px 10px;
+    list-style: none;
+}
+
+#sobreMi ul li span{
+    font-weight: bold;
+}
+
+
+
+/*PARALAlX*/
+
+#parallax {
+    /* The image used */
+    background-image: url("imagenes/hexagonoBGgrey.jpg");
+  
+    /* Set a specific height */
+    min-height: 200px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*QUE HAGO*/
+
+#queHago{
+    margin: 50px 10px 0px 10px;
+    padding: 0 0 0 0;
+    
+}
+
+#queHago h2{
+    color: #6bacb0;
+    text-align: center;
+}
+
+#queHago li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+#queHago ul{
+    display: grid;
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+
+#queHago img{
+
+    display: none;
+}
+
+#queHago ul li span{
+    width: 50px;
+    height: 50px;
+    background: url("iconos/logo.png");
+    font-size: 0;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    z-index: 1;
+}
+
+
+
+#queHago div:nth-child(2) div:first-child{
+    margin: auto;
+}
+
+
+#queHago div:nth-child(1){
+    display: grid;
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*TECNOLOGIAS*/
+
+#tecnologias{
+    margin: 0px 10px 0px 10px;
+}
+
+
+#tecnologias div ul{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+
+    
+}
+
+
+#tecnologias h2{
+    color: #6bacb0;
+    margin: 0 0 50px 0;
+}
+
+#tecnologias li{
+    list-style: none;
+}
+
+/*IDIOMAS*/
+
+#idiomas{
+    margin: 0px 10px 0px 10px;
+}
+
+#idiomas h2{
+    color: #6bacb0;
+    margin: 50px 0 50px 0;
+}
+
+#idiomas ul{
+    margin-bottom: 50px;
+}
+
+#idiomas li{
+    list-style: none;
+}
+
+
+
+/*MI PORTFOLIO*/
+
+#miPortfolio{
+    margin: 0px 10px 0px 10px;
+}
+
+#miPortfolio h2{
+    color: #6bacb0;
+    margin: 50px 0 50px 0;
+}
+
+
+
+
+
+#miPortfolio img{
+
+    max-width: 15rem;
+
+
+}
+
+
+/*
+
+IMPORTANTE
+
+*/
+.carta{
+    width: 300px;
+    transition: 0.5s;
+}
+
+
+.container .card{
+    position: relative;
+    cursor: pointer;
+    margin: auto;
+}
+
+.container .card .face{
+    width: 300px;
+    height: 200px;
+    transition: 0.5s;
+}
+
+.container .card .face.face1{
+    position: relative;
+    background: #5f5152;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+}
+
+.container .card:hover .face.face1{
+    background: #6bacb0;
+    transform: translateY(0);
+}
+
+.container .card .face.face1 .content{
+    opacity: 0.2;
+    transition: 0.5s;
+}
+
+.container .card:hover .face.face1 .content{
+    opacity: 1;
+}
+
+.container .card .face.face1 .content img{
+    max-width: 100px;
+}
+
+.container .card .face.face1 .content h3{
+    margin: 10px 0 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container .card .face.face2{
+    position: relative;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+    transform: translateY(-100px);
+}
+
+.container .card:hover .face.face2{
+    transform: translateY(0);
+}
+
+.container .card .face.face2 .content p{
+    margin: 0;
+    padding: 0;
+}
+
+.container .card .face.face2 .content a{
+    margin: 15px 0 0;
+    display:  inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 5px;
+    border: 1px solid #333;
+}
+
+.container .card .face.face2 .content a:hover{
+    background: #333;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*CONTACTAME*/
+
+#contactame{
+    margin: 0px 10px 0px 10px;
+    padding: 0 0 50px 0;
+
+}
+
+#contactame h2{
+    color: #6bacb0;
+    margin: 50px 0 50px 0;
+}
+
+#contactame img{
+    max-width: 100%;
+    width: 500px;
+    margin: auto;
+}
+
+
+#contactame label{
+    font-family: 'Work Sans', sans-serif;
+    font-size: 1.3em;
+
+}
+
+
+
+#contactame input, #contactame textarea{
+    padding: 12px 20px;
+    font-size: 1em;
+    font-family: 'Work Sans', sans-serif;
+    margin: 0 0 20px 0;
+    border: solid rgb(206, 206, 206) 2px;
+    resize: none;
+
+}
+
+#contactame div:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+#contactame div:nth-child(2) div:nth-child(2){
+    max-width: 100vw;
+}
+
+
+.boton2 {
+    border: solid #6bacb0;
+    background-color: #6bacb0;
+    padding: 12px 40px ;
+    border-radius: 50px;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    transition: 0.5s;
+    display: block;
+    max-width: 13em;
+    text-align: center;
+    letter-spacing: 2.5px;
+}
+
+.boton2:hover{
+    background-color: white;
+    border: solid #6bacb0;
+    color: #6bacb0;
+    transform: translateY(-5px);
+}
+
+
+
+/*BOTON SUBIR*/
+#botonSubir{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 999;
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 999;
+    background-color: whitesmoke;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+}
+
+#botonSubir:hover{
+    transform:translateY(-5px);
+    box-shadow: 0 0 25px rgb(107, 172, 1761, 1);
+}
+
+/*FOOTER*/
+
+footer{
+    height: 100px;
+    background-color: rgb(34, 34, 34);
+}
+
+footer div:first-child{
+    margin: 0 10px 0 10px;
+}
+
+/*NAVBAR*/
+
+
+header {
+    background: #6bacb0;
+    text-align: center;
+    color: white;
+    height: 4em;
+    line-height: 4em;
+    position: fixed;
+    max-width: 100vw;
+    width: 100%;
+    z-index: 2;
+
+}
+
+
+#logo {
+    width: 50px;
+    height: 50px;
+    background: url("iconos/logo.png");
+    font-size: 0;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    z-index: 1;
+}
+
+
+
+
+
+@media screen and (max-width: 991px) {
+
+    nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    #hamburguesa {
+        position: absolute;
+        right: 10px;
+        top: 0;
+    }
+
+    #hamburguesa li {
+        list-style: none;
+        text-indent: -100px;
+        overflow: hidden;
+        margin-top: .75em;
+        width: 2.5em;
+    }
+
+    #hamburguesa li a {
+        background: url("iconos/menu.png") no-repeat center center;
+        background-size: cover;
+        display: block;
+        height: 2.5em;
+    }
+
+    #hamburguesa li:last-child {
+        display: none;
+    }
+
+    /* En este ejemplo cambiamos el efecto de apertura, en vez de manejar el left cambiamos el alto de la caja, cuando está cerrada la barra su alto será cero y cuando está abierta el mismo alto que tenía en el ejemplo anterior. 
+    
+    Lo único que tenemos que tener en cuentra es que si la ul tiene alto cero los botones se verán igual excediendo el alto de la caja, por lo que los ocultamos con la propiedad overflow. */
+
+    nav:target #barra {
+        height: calc(100vh - 4em);
+    }
+
+    nav:target #hamburguesa li:first-child {
+        display: none;
+    }
+
+    nav:target #hamburguesa li:last-child {
+        display: block;
+    }
+
+    /* Como le sacamos el padding a la barra de 1rem para que no se aplique cuando tienen alto cero, recuperamos ese valor de distancia del borde superior en el primer li y luego en pc se lo agregamos nuevamente a la barra. */
+
+    #barra li:first-child {
+        margin-top: 2rem;
+    }
+    
+   
+}
+
+#barra {
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 4em;
+    left: 0;
+    background: #547274;
+    transition: height .5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#barra li {
+    list-style: none;
+    margin: 1em;
+    width: 80%;
+}
+
+#barra li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+    line-height: 2em;
+}
+
+/*PARA TABLET*/
+
+
+@media screen and (min-width: 530px){
+   
+    #pantallaInicio img{
+        width: 48vw;
+
+    }
+
+    #queHago div:nth-child(1) ul{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-gap: 50px;
+    }
+
+    /*IDIOMAS*/
+
+    #idiomas div:nth-child(2) ul{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-gap: 10px;
+    }
+    
+
+   
+
+}
+
+
+
+@media screen and (min-width: 768px) {
+    
+
+    #logo {
+        left: 50px;
+    }
+
+    /*PANTALLA INICIO*/
+
+    
+    #pantallaInicio{
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+    }
+
+    #pantallaInicio img{
+        width: 40vw;
+        border-radius: 50%;
+    }
+
+    #pantallaInicio div:nth-child(1){
+        margin:auto auto auto auto;
+        max-width: 40vw;
+        
+
+    }
+
+    #pantallaInicio div:nth-child(1) p{    
+        display: none;
+    }
+
+    #pantallaInicio div:nth-child(2){
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #pantallaInicio div:nth-child(1) p{    
+        display: block;
+    }
+
+    .boton1 {
+        border: solid #6bacb0;
+        background-color: #6bacb0;
+        padding: 12px 40px ;
+        border-radius: 50px;
+        font-size: 1em;
+        font-weight: bold;
+        color: white;
+        transition: 0.5s;
+        display: block;
+        max-width: 13em;
+        text-align: center;
+        letter-spacing: 2.5px;
+    }
+    
+    .boton1:hover{
+        background-color: white;
+        border: solid #6bacb0;
+        color: #6bacb0;
+        transform: translateY(-5px);
+    }
+
+
+
+    /*SOBRE MI*/
+
+    #sobreMi img{
+        display: block;
+        max-width: 25vw;
+        margin: auto auto auto auto;
+    }
+
+    #sobreMi div:last-child{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+    }
+
+    /*QUE HAGO*/
+  
+
+
+    /*TECNOLOGIA*/
+
+    #tecnologias div ul{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-gap: 10px;
+    }
+
+    /*IDIOMAS*/
+
+
+    
+
+
+    /*MI PORTFOLIO*/
+  
+    
+
+    #miPortfolio #cartas{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(200px, 1fr));
+        grid-gap: 10px;
+    } 
+
+}
+
+/* Estilos para pc. */
+
+
+@media screen and (min-width: 864px){
+
+    #queHago h2{
+        text-align: left;
+    }
+
+    #queHago img{
+        max-width: 100%;
+        width: 300px;
+        margin: auto;
+        display: block;
+    }
+
+    #queHago div:nth-child(1) div:nth-child(1){
+        max-width: 100vw;
+        
+    }
+
+
+    #queHago div:nth-child(1){
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+    } 
+
+
+    #queHago div:nth-child(1) div:nth-child(1){
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        grid-gap: 10px;
+    }
+
+    #queHago div:nth-child(1) ul{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(200px, 1fr));
+        grid-gap: 10px;
+    }
+
+
+    /*CONTACTAME*/
+
+    #contactame img{
+
+        display: block;
+    }
+
+
+    
+    
+}
+
+
+
+
+@media screen and (min-width: 992px) {
+
+    /*NAVBAR*/
+
+    #hamburguesa {
+        display: none;
+    }
+
+    header {
+        height: auto;
+        max-width: 100vw;
+        margin: auto;
+        display: flex;
+    }            
+
+    h1 {
+        padding-left: 1.5rem;
+    }
+
+    #menu {
+        flex: 1;
+    }
+
+    #barra {
+        position: static;
+        height: auto;
+        background: none;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 1rem;
+    }
+
+    #barra li {
+        width: 130px;
+        margin: 0 50px 0 1em;
+    }
+
+
+    /*PANTALLA DE INICIO*/
+
+    
+    #pantallaInicio{
+        padding-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 10px;
+    }
+
+    #pantallaInicio img{
+        width: 40vw;
+        border-radius: 50%;
+    }
+
+    #pantallaInicio div:nth-child(1){
+        margin:auto auto auto auto;
+        max-width: 40vw;
+        
+
+    }
+
+    #pantallaInicio div:nth-child(1) p{    
+        display: none;
+    }
+
+    #pantallaInicio div:nth-child(2){
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    #pantallaInicio h2{
+        font-size: 4em;
+    }
+
+    #pantallaInicio div:nth-child(1) p{    
+        display: block;
+    }
+
+    /*SOBRE MI*/
+
+    #sobreMi{
+        margin: 0 90px 50px 90px;
+    }
+
+
+
+
+
+    /*QUE HAGO*/
+
+    #queHago{
+        margin: 50px 90px 50px 90px;
+    }
+    
+    
+
+    /*TECNOLOGIAS*/
+
+    #tecnologias{
+        margin: 0 90px 0 90px;
+    }
+
+    
+
+    /*IDIOMAS*/
+    
+    #idiomas{
+        margin: 0 90px 0 90px;
+    }
+
+
+    /*MIPORTFOLIO*/
+
+    #miPortfolio{
+        margin: 0 90px 0 90px;
+    }
+
+
+
+    .carta, .mitadCarta1, .mitadCarta2{
+        max-width: calc(100vw / 3.8);
+
+    }
+
+    #miPortfolio #cartas{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-gap: 100px;
+    } 
+
+    /*IDIOMAS*/
+    
+
+    /*CONTACTAME*/
+
+    #contactame{
+        margin: 0 90px 0 90px;
+    }
+
+
+    /*FOOTER*/
+
+    #footer{
+        margin: 0 90px 0 90px;
+    }
+
+    
+    
+}
+
+@media screen and (min-width: 1100){
+
+    #miPortfolio #cartas{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(200px, 1fr));
+        grid-gap: 10px;
+    } 
+
+
+
+}
+
+
+
+
+/*CONFIGURACION DEL FATE*/
+
+
+.slideUp {
+    animation-name: slideUp;
+    -webkit-animation-name: slideUp;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+  }
+  
+  @keyframes slideUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(50px);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  
+  @-webkit-keyframes slideUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(50px);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+}
+
+.slideUp2 {
+    animation-name: slideUp2;
+    -webkit-animation-name: slideUp2;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+  }
+  
+  @keyframes slideUp2 {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(200px);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  
+  @-webkit-keyframes slideUp2 {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(200px);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+}
+
+.slideDown {
+    animation-name: slideDown;
+    -webkit-animation-name: slideDown;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+  }
+  
+  @keyframes slideDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-50px);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  
+  @-webkit-keyframes slideDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-50px);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+}
+
+.slideRight {
+    animation-name: slideRight;
+    -webkit-animation-name: slideRight;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+  }
+  @keyframes slideRight {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(20%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+    }
+  }
+  
+  @-webkit-keyframes slideRight {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(20%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+    }
+}
+
+.slideLeft {
+    animation-name: slideLeft;
+    -webkit-animation-name: slideLeft;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    visibility: visible;
+  }
+  @keyframes slideLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-20%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+    }
+  }
+  
+  @-webkit-keyframes slideLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-20%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0%);
+    }
+}
+
+
+
+
+  
