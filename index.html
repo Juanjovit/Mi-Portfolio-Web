@@ -5,29 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juan José Vitali | Diseñador y programador web</title>
+<!--CSS Principal-->    
     <link rel="stylesheet" href="estilos.css">
-    
+<!--Fotns-->    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Work+Sans&display=swap" rel="stylesheet">
-
+<!--JQ del fade in-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!--CSS y JS del menu hamburguesa-->
+    <link href="hamburgers.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
 
 </head>
 <body>
 
     <header>
         <h1 id="logo">Juan José Vitali Diseñador y programador web</h1>
-
+    
         <nav id="menu">
-            <ul id="hamburguesa">
-                <li><a href="#menu">Abrir</a></li>
-                <li><a href="#">Cerrar</a></li>
-            </ul>
-            <ul id="barra">
-                <li><a href="#uno">Botón UNO</a></li>
-                <li><a href="#dos">Botón DOS</a></li>
-                <li><a href="#tres">Botón TRES</a></li>
+          <button id="hamburguesa" class="hamburger hamburger--squeeze" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>  
+            <ul id="barra" style="visibility: hidden;">
+                <li><a href="#uno">Inicio</a></li>
+                <li><a href="#dos">Sobre mi</a></li>
+                <li><a href="#tres">Mi Portfolio</a></li>
+                <li><a href="#tres">Contactame</a></li>
             </ul>
         </nav>
     </header>
@@ -360,24 +367,24 @@
             <div>
                 <div>
                     <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-                        <label for="Name" class="fcf-label">Your name</label>
+                        <label for="Name" class="fcf-label">Tu nombre</label>
                         <div class="fcf-input-group">
                             <input type="text" id="Name" name="Name" class="fcf-form-control" required>
                         </div>
                     <div class="fcf-form-group">
-                        <label for="Email" class="fcf-label">Your email address</label>
+                        <label for="Email" class="fcf-label">Tu correo electronico</label>
                         <div class="fcf-input-group">
                             <input type="email" id="Email" name="Email" class="fcf-form-control" required>
                         </div>
                     </div>
                     <div class="fcf-form-group">
-                        <label for="Message" class="fcf-label">Your message</label>
+                        <label for="Message" class="fcf-label">Tu mensaje</label>
                         <div class="fcf-input-group">
                             <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
                         </div>
                     </div>
                     <div class="fcf-form-group">
-                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block boton2">Send</button>
+                        <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block boton2">Enviar</button>
                     </div>
                     <a href="https://api.whatsapp.com/send?phone=542346680605">https://api.whatsapp.com/send?phone=542346680605</a>
                 </div>
@@ -402,7 +409,8 @@
     </footer>
     
     <script src="fade.js"></script>
-    
+    <script src="hamburguesa.js"></script>
+
 
    
 
